@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Found the number</title>
+</head>
+<body>
+    <header>
+        <h1>FOUND THE FUCKING NUMBER</h1>
+    </header>
+    <main>
+        <center>
+            <article id="art-start" class="art-start">
+                <h2>START GAME</h2>
+                <section class="instruction">
+                    <h3>how to play:</h3>
+                    <ul>
+                        <li>The number will be randomly selected between 1 and 100.</li>
+                        <li>You only have 10 tries to adivinate the number.</li>
+                        <li>After each number the system indicates your error.</li>
+                    </ul>
+                </section>
+                <button onclick="startGame();">Start Game</button>
+            </article>
+            <article id="art-game" class="art-game" style="display: none;">
+                <h2>IN GAME</h2>
+                <section id="panel-insert" class="panel-insert">
+                    <label>Set number:</label>
+                    <input type="number" id="input-number">
+                    <button onclick="tryNumber();">Try Number</button>
+                </section>
+                <section id="panel-datashow" class="panel-datashow">
+                    <section id="last-tries" class="last-tries"></section>
+                    <section id="dintance" class="dintance" style="display: none;">
+                        <h3>Approach</h3>
+                        <section class="graph">
+                            <section id="left3" class="left3"></section>
+                            <section id="left2" class="left2"></section>
+                            <section id="left1" class="left1"></section>
+                            <section id="right1" class="right1"></section>
+                            <section id="right2" class="right2"></section>
+                            <section id="right3" class="right3"></section>
+                        </section>
+                        <p>UNDER <<< | >>> ABOVE</p>
+                    </section>
+                    <section id="message" class="message" style="display: none;">
+                        <section id="victory" class="victory" style="display: none;">
+                            <h3>congratulation</h3>
+                            <p>you've won, the correct number is:</p>
+                        </section>
+                        <section id="defeat" class="defeat" style="display: none;">
+                            <h3>Haha, you lose</h3>
+                            <p>the correct number was:</p>
+                        </section>
+                        <p id="number-text" class="number-text"></p>
+                        <button id="restart-btn" class="restart-btn"style="display: none;" onclick="location.reload();">Restart Game</button>
+                    </section>
+                </section>
+            </article>
+        </center>
+    </main>
+    <footer>
+        <p>Created by: Leonardo Miguel Aguado Diaz.</p>
+        <link rel="stylesheet" href="style.css">
+        <script src="main.js"></script>
+    </footer>
+</body>
+</html>

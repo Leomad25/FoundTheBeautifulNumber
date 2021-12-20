@@ -1,0 +1,225 @@
+* {
+    padding: 0;
+    margin: 0;
+    cursor: default;
+}
+
+body {
+    background-color: rgb(50, 50, 50);
+}
+
+body header {
+    background-color: rgba(0, 0, 0, 0.4);
+    padding-top: 10px;
+    padding-bottom: 10px
+}
+
+    body header h1 {
+        color: white;
+        text-align: center;
+    }
+
+body main {
+    color: white;
+}
+
+    body main .art-start {
+        background-color: rgba(255, 255, 255, 0.1);
+        width: 80%;
+        max-width: 500px;
+        padding-top: 10px;
+        padding-bottom: 10px;
+        border-radius: 25px;
+        margin-top: 2em;
+    }
+
+        body main .art-start h2 {
+            text-align: center;
+            border-bottom: 1px dotted white;
+        }
+
+        body main .art-start .instruction {
+            margin-top: 10px;
+            margin-bottom: 10px;
+            text-align: justify;
+        }
+
+            body main .art-start .instruction h3 {
+                margin-left: 10px;
+            }
+
+            body main .art-start .instruction ul {
+                margin-left: 30px;
+            }
+
+        body main .art-start button {
+            width: 80%;
+            margin-top: 10px;
+            background-color: black;
+            color: white;
+            font-weight: bold;
+            font-size: 2em;
+            font-family: 'Times New Roman';
+            border-radius: 25px;
+            border: 2px solid white;
+            cursor: pointer;
+        }
+    
+    body main .art-game {
+        background-color: rgba(255, 255, 255, 0.1);
+        width: 90%;
+        max-width: 1000px;
+        padding-top: 10px;
+        padding-bottom: 20px;
+        border-radius: 25px;
+        margin-top: 2em;
+    }
+
+        body main .art-game h2 {
+            text-align: center;
+            border-bottom: 1px dotted white;
+        }
+
+        body main .art-game .panel-insert {
+            margin-top: 5px;
+            margin-bottom: 5px;
+            background-color: rgba(255, 255, 255, 0.1);
+            padding-top: 5px;
+            padding-bottom: 10px;
+        }
+
+            body main .art-game .panel-insert label {
+                font-size: 1.4em;
+            }
+
+            body main .art-game .panel-insert input {
+                font-size: 1.4em;
+                background-color: rgba(255, 255, 255, 0);
+                width: 70px;
+                cursor: pointer;
+            }
+
+            body main .art-game .panel-insert button {
+                font-size: 1.4em;
+                background-color: black;
+                color: white;
+                padding-left: 10px;
+                padding-right: 10px;
+                border-radius: 25px;
+                font-family: 'Times New Roman';
+                border: 2px solid white;
+                cursor: pointer;
+            }
+
+        body main .art-game .panel-datashow .last-tries {
+            background-color: rgba(255, 255, 255, 0.1);
+            width: 90%;
+            border-radius: 25px;
+            margin-bottom: 5px;
+        }
+
+            body main .art-game .panel-datashow .last-tries table td {
+                background-color: rgba(0, 0, 0, 0.5);
+                font-size: 1.2em;
+                height: 30px;
+                padding-left: 5px;
+                padding-right: 5px;
+                text-align: center;
+            }
+
+        body main .art-game .panel-datashow .dintance {
+            background-color: rgba(255, 255, 255, 0.1);
+            width: 80%;
+            border-radius: 25px;
+        }
+
+            body main .art-game .panel-datashow .dintance .graph section {
+                display: inline-block;
+                width: 10%;
+                border-radius: 10px;
+            }
+
+                body main .art-game .panel-datashow .dintance .graph .left1-color,
+                body main .art-game .panel-datashow .dintance .graph .right1-color {
+                    background-color: greenyellow;
+                    height: 50px;
+                }
+
+                body main .art-game .panel-datashow .dintance .graph .left2-color,
+                body main .art-game .panel-datashow .dintance .graph .right2-color {
+                    background-color: goldenrod;
+                    height: 80px;
+                }
+
+
+                body main .art-game .panel-datashow .dintance .graph .left3-color,
+                body main .art-game .panel-datashow .dintance .graph .right3-color {
+                    background-color: red;
+                    height: 110px;
+                }
+
+                body main .art-game .panel-datashow .dintance .graph .left1,
+                body main .art-game .panel-datashow .dintance .graph .right1 {
+                    height: 50px;
+                }
+
+                body main .art-game .panel-datashow .dintance .graph .left2,
+                body main .art-game .panel-datashow .dintance .graph .right2 {
+                    height: 80px;
+                }
+
+
+                body main .art-game .panel-datashow .dintance .graph .left3,
+                body main .art-game .panel-datashow .dintance .graph .right3 {
+                    height: 110px;
+                }
+            
+        body main .art-game .panel-datashow .message {
+            background-color: rgba(255, 255, 255, 0.1);
+            width: 80%;
+            border-radius: 25px;
+            margin-top: 10px;
+            padding-bottom: 10px;
+        }
+
+            body main .art-game .panel-datashow .message .victory h3,
+            body main .art-game .panel-datashow .message .defeat h3 {
+                font-size: 1.6em;
+                text-transform: uppercase;
+            }
+
+            body main .art-game .panel-datashow .message .victory p,
+            body main .art-game .panel-datashow .message .defeat p {
+                font-size: 1.2em;
+
+            }
+
+            body main .art-game .panel-datashow .message .number-text {
+                font-size: 1.8em;
+            }
+        
+            body main .art-game .panel-datashow .message .restart-btn {
+                font-size: 1.8em;
+                color: white;
+                background-color: black;
+                border-radius: 25px;
+                padding-top: 8px;
+                padding-bottom: 8px;
+                padding-left: 5px;
+                padding-right: 5px;
+                border: 1px solid white;
+                font-family: 'Times New Roman';
+                font-weight: bold;
+            }
+
+
+body footer {
+    background-color: black;
+    color: white;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    text-align: center;
+}
